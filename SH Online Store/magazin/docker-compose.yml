@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  php-env:
+    build: . # path to Dockerfile
+    volumes: 
+      - ./src:/var/www/html 
+    ports:
+      - "8080:80"
+
+  mysql_db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2
+    platform: linux/amd64
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql_db
+
+volumes:
+  mysql_data: {}

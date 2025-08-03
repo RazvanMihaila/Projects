@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.embed-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+canvas, svg {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#map {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.welcome-section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.welcome-section:hover {
+    transform: translateY(-2px);
+}
+
+.welcome-section .btn {
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+.gap-2 > * {
+    margin-right: 12px;
+    margin-bottom: 8px;
+}

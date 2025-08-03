@@ -1,0 +1,39 @@
+# ----------------
+# Java (Facial Recognition + Triangle App)
+# ----------------
+*.class
+*.jar
+*.log
+*.tmp
+*.swp
+*.iml
+*.DS_Store
+bin/
+out/
+build/
+
+# IDE specific
+.idea/
+.vscode/
+*.bak
+
+# ----------------
+# PHP (SH Online Store)
+# ----------------
+.env
+vendor/
+composer.lock
+
+# Cache & temp
+*.cache
+*.log
+*.sql~
+*.gz
+*.zip
+*.tar
+
+# ----------------
+# OS specific
+# ----------------
+Thumbs.db
+.DS_Store
